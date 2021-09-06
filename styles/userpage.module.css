@@ -1,0 +1,31 @@
+.user_container {
+  width: 30vw;
+  margin: auto;
+}
+
+.user_form {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.user_form h2 {
+  font-size: 2vw;
+}
+
+.user_form label {
+  display: inline-block;
+  width: 5vw;
+  margin-bottom: 0.2em;
+  font-size: 1vw;
+}
+
+.user_form button {
+  width: 6vw;
+  height: 6vw;
+  margin: 2vh auto 0;
+  padding: 0px;
+  font-size: 0.85vw;
+  border-radius: 50%;
+  cursor: pointer;
+}

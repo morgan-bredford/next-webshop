@@ -1,0 +1,49 @@
+.menu_bar {
+  position: relative;
+}
+
+.h3_kategorier {
+  margin-top: 10vh;
+  margin-bottom: 1vh;
+  font-size: 1.29vw;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.menu_close {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.menu_nav_ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav_ul {
+  display: flex;
+}
+
+.nav_ul li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.nav_ul li:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.nav_ul a {
+  text-decoration: none;
+}
+
+.navlink {
+  margin: 10px;
+  font-size: 1.1vw;
+  cursor: pointer;
+}
