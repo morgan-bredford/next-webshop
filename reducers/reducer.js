@@ -132,6 +132,18 @@ export const reducer = (state, action) => {
         cart: temp_cart,
       }
 
+    case "empty_cart":
+      if (JSON.parse(localStorage.getItem("user"))) {
+        let user = JSON.parse(localStorage.getItem("user"))
+        user = { ...user, cart: [] }
+        localStorage.setItem("user", JSON.stringify(user))
+      }
+
+      return {
+        ...state,
+        cart: [],
+      }
+
     case "jwt":
       return {
         ...state,

@@ -95,12 +95,6 @@ a:visited {
   }
 }
 
-.empty_basket {
-  text-transform: uppercase;
-  text-align: center;
-  padding: 1em;
-}
-
 /* .nav_ul {
   display: flex;
 }
@@ -255,14 +249,20 @@ a:visited {
 }
 
 .header_cart_image {
-  width: 4vw;
+  width: 3vw;
 }
 
 .header_cart_number {
   position: absolute;
-  font-size: 1.29vw;
+  color: purple;
+  font-size: 1.2vw;
   font-weight: 900;
-  transform: translate(20%, -30%);
+  transform: translate(20%, -51%);
+}
+
+.header_cart_cartname {
+  font-size: 0.7vw;
+  font-weight: 600;
 }
 
 .category_main {

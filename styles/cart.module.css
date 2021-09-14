@@ -70,3 +70,18 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+
+.cart_emptyingcart {
+  margin: auto;
+  font-size: 1vw;
+  text-align: center;
+  text-decoration: underline;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.cart_empty_cart {
+  margin: auto;
+  text-align: center;
+  padding: 1em;
+}

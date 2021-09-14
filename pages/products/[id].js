@@ -83,7 +83,6 @@ const Product = (props) => {
   }
 
   useEffect(() => {
-    console.log(props.related_category)
     let temp_array = shuffleArray(props.related_category)
     temp_array.length = 3
     setCategoryProducts(temp_array)

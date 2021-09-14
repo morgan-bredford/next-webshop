@@ -142,6 +142,7 @@ const Navbar = () => {
             {cart.length ? (
               <span className="header_cart_number">{numOfItemsInCart}</span>
             ) : null}
+            <div className="header_cart_cartname">varukorg</div>
           </div>
         </ul>
       </nav>
