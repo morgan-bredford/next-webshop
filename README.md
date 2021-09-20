@@ -34,7 +34,7 @@ I klientdelen använder jag functional components med Hooks. Istället för Redu
 -useContext\
 -Router v5  
 
-Appen använder en MongoDB databas. 
+Appen använder en MongoDB databas.  
 -MongoDB  
 
 Appen använder inga sessions. Vanliga användare loggar in med lösenord som är hashat i databasen. Dens info sparas sen i localstorage tills de loggar ut. Admins får en jsonwebtoken när de loggar in som kollas varje gång de utför ett kommando mot servern. Deras info sparas inte i localstorage. Routing till adminsidan är skyddad även om det kunde varit hårdare koll i klienten.  
