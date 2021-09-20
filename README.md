@@ -1,34 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# webshop
+ MB's webbshop  
+ https://next-webshop.vercel.app/
+ 
+A demo web shop built with NextJS, MongoDB, Webpack, jsonwebtokens.
 
-## Getting Started
+For the client side i used functional components with Hooks. Instead of using Redux i used a combination of useReducer, useContext, Router v5 and Hooks.  
+-Hooks\
+-useReducer\
+-useContext\
+-Router v5  
 
-First, run the development server:
+It uses a MongoDB database.  
+-MongoDB\
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+There are no sessions. Normal users login with password that is hashed in the database. Their user info is then stored in the client and in localstorage until they log out. Admins receive a jsonwebtoken when logging in that is checked on every request to the server. Their info is not stored in local storage. There is protected routing for the admin page although it should be more secure on the client side.  
+-Login\
+-hashed password\
+-Local storage\
+-jsonwebtokens  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Things yet to be implemented\
+-a checkout page\
+-animation for frontpage carousel\
+-a seller's page\
+-more form validation\
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+--------------------------------------------------------------------------------------------------------  
+En fiktiv webbshop byggd som arbetsprov gjord med React, Server-Side Rendering, NodeJS, GraphQL, MongoDB, Webpack, jsonwebtokens.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+I klientdelen använder jag functional components med Hooks. Istället för Redux använder jag useReducer, useContext, Router v5 och Hooks tillsammans.\
+-Hooks\
+-useReducer\
+-useContext\
+-Router v5  
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Appen använder en MongoDB databas. 
+-MongoDB\ 
 
-## Learn More
+Appen använder inga sessions. Vanliga användare loggar in med lösenord som är hashat i databasen. Dens info sparas sen i localstorage tills de loggar ut. Admins får en jsonwebtoken när de loggar in som kollas varje gång de utför ett kommando mot servern. Deras info sparas inte i localstorage. Routing till adminsidan är skyddad även om det kunde varit hårdare koll i klienten.  
+-Login\
+-hashed password\
+-Local storage\
+-jsonwebtokens  
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
